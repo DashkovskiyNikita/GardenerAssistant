@@ -1,4 +1,4 @@
-![logo](/app_logo.png){: height="36px" width="36px"}
+![logo](/app_logo.png =64x64)
 
 # Садовый помощник
 Описание проекта.
