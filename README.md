@@ -1,6 +1,4 @@
-![logo](/app_logo.png =64x64)
+<img src="app_logo.jpg" alt="drawing" width="64"/>
 
 # Садовый помощник
 Описание проекта.
-
-
