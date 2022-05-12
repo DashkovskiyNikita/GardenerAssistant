@@ -137,7 +137,7 @@ fun ShowDays(days: List<Day>, busyDays: List<Plant>) {
                 var isBusy = false
                 busyDays.forEach {
                     val day = DateHelper.getDay(it.collectionTime)
-                    if (day == value.dayNumber) {
+                    if (day == value.dayNumber && value.isActive) {
                         isBusy = true
                         return@forEach
                     }

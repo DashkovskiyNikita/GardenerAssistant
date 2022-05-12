@@ -118,10 +118,10 @@ fun PlantCard(plant: Plant, navController: NavController) {
             )
             Spacer(modifier = Modifier.height(5.dp))
             Image(
-                painter = painterResource(id = R.drawable.ic_launcher_background),
+                painter = painterResource(id = R.drawable.plant_image_releise),
                 contentDescription = "image",
                 contentScale = ContentScale.FillBounds,
-                modifier = Modifier.fillMaxSize()
+                modifier = Modifier.fillMaxWidth().height(150.dp)
             )
         }
 

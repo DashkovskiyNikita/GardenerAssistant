@@ -49,7 +49,7 @@ class CalendarViewModel @Inject constructor(private val fetchMonthDaysUseCase: F
         val start = DateHelper.getFirstDayMillisByLocalDate(_localDate.value!!)
         val end = DateHelper.getLastDayMillisByNumber(_localDate.value!!)
         viewModelScope.launch {
-            _screenState.value = CalendarScreenState(isLoading = false)
+            _screenState.value = CalendarScreenState(isLoading = true)
             val data = fetchMonthDaysUseCase(start, end)
             _screenState.value = CalendarScreenState(data = data)
         }
