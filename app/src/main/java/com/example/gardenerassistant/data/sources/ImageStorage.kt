@@ -12,7 +12,6 @@ interface AbstractImageStorage {
     suspend fun saveImage(bitmap: Bitmap): String
 }
 
-@Suppress("BlockingMethodInNonBlockingContext")
 class ImageStorage : AbstractImageStorage, KoinComponent {
 
     override suspend fun selectImage(fileName: String): Bitmap? =

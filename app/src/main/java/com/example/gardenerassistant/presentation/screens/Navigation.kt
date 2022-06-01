@@ -44,7 +44,7 @@ fun Navigation(
             CalendarScreen(modifier = modifier)
         }
         composable(route = PlantScreen.Settings.route) {
-            SettingsScreen()
+            SettingsScreen(modifier = modifier)
         }
         composable(
             arguments = listOf(

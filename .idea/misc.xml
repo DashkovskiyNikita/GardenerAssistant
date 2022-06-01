@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/PC-Home/AndroidStudioProjects/GardenerAssistant/app/src/main/res/drawable/database_icon.xml" value="0.123" />
         <entry key="..\:/Users/PC-Home/AndroidStudioProjects/GardenerAssistant/app/src/main/res/drawable/ic_grass.xml" value="0.1" />
         <entry key="..\:/Users/PC-Home/AndroidStudioProjects/GardenerAssistant/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1045" />
+        <entry key="..\:/Users/PC-Home/AndroidStudioProjects/GardenerAssistant/app/src/main/res/drawable/share-48px.xml" value="0.209" />
         <entry key="..\:/Users/PC-Home/AndroidStudioProjects/GardenerAssistant/app/src/main/res/layout/activity_plant.xml" value="0.259375" />
         <entry key="..\:/Users/PC-Home/AndroidStudioProjects/GardenerAssistant/app/src/main/res/layout/content_plant.xml" value="0.1" />
         <entry key="..\:/Users/PC-Home/AndroidStudioProjects/GardenerAssistant/app/src/main/res/layout/fragment_first.xml" value="0.259375" />

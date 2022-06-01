@@ -2,8 +2,10 @@
 
 package com.example.gardenerassistant.presentation.screens
 
+import android.content.Context
 import android.graphics.Bitmap
 import android.os.Build
+import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -64,6 +66,12 @@ fun UserPlantScreen(
         floatingActionButton = {
             SavePlantFloatingButton(modifier = modifier) {
                 viewModel.insertUserPlant(isChange)
+                if (isChange) {
+                    showToast("Изменения сохранены", context)
+                }else{
+                    showToast("Растение добавлено", context)
+                    navController.popBackStack()
+                }
             }
         }
     ) {
@@ -161,7 +169,7 @@ fun ScreenTitleSection(isChange: Boolean = true) {
 @Composable
 fun SavePlantFloatingButton(
     modifier: Modifier = Modifier,
-    onClick: () -> Unit = {}
+    onClick: () -> Unit = {},
 ) {
     FloatingActionButton(
         modifier = modifier,
@@ -358,6 +366,10 @@ fun NoteField(value: String, onValueChanged: (UserPlantScreenIntent) -> Unit = {
         onValueChanged = { onValueChanged(UserPlantScreenIntent.NoteChanged(it)) }
     )
 }
+
+fun showToast(message: String,context : Context) =
+    Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
+
 
 
 
